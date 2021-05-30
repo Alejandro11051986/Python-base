@@ -11,6 +11,7 @@ newnumber = int(input("Введите новый элемент рейтинга
 
 numberslist.append(newnumber)
 numberslist.sort()
+numberslist.reverse()
 
 print(numberslist)
 
