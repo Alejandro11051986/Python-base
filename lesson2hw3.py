@@ -18,13 +18,13 @@ else:
 dict_seasons = {'winter': (12, 1, 2), 'spring' : (3, 4, 5), 'summer' : (6, 7, 8), 'autumn' : (9, 10, 11)}
 month = int(input('введите любой месяц цифровым значением от 0 до 12 :'))
 if month in dict_seasons.get('winter'):
-    print('winter')
+    print('зима')
 elif month in dict_seasons.get('spring'):
-    print('spring')
+    print('весна')
 elif month in dict_seasons.get('summer'):
-    print('summer')
+    print('лето')
 else:
-    print('autumn')
+    print('осень')
 
 
 
