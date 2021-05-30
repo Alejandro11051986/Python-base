@@ -52,3 +52,31 @@ products_matrix.update({"название": product_name,
                         })
 print(products_matrix)
 
+index = 1
+result = []
+spec = ["название", "цена", "количество", "цвет"]
+
+while True:
+    question = input("Добавить новый продукт да/нет?") # нет Нет нЕт НЕт НеТ НЕТ
+    if question.upper() == "НЕТ":
+        break
+    item = {} #dict
+
+    for spe in spec:
+        user_data = input(f"Введите {spe}")
+        #item[spe] == int(user_data) if user_data.isdigit() else user_data
+        if user_data.isdigit(): #True or False
+            item[spe] = int(user_data)
+        else:
+            item[spe] = user_data
+
+    result.append(tuple([index,item]))
+    index +=1
+print(result)
+
+res_dict = {}
+for item in spec:
+    for _, param in result:
+        if res_dict.get(item):
+            res_dict[].append(param.get(item))
+        else
